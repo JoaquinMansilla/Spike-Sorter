@@ -5,7 +5,7 @@ This software is an offline spike sorter developed in Matlab. It has an intuitiv
 This programs pretends to be an useful and generic Matlab tool for making spike sorting and also to understand the process and make a tracing of it.
 
 # How to use it - Plug and play
-Download all files to the same folder. In Matlab change actual folder to Spike Sorter directory and run "SpikeSort" on the command line.
+Download all files to the same folder. In Matlab, change actual folder to Spike Sorter directory and run "SpikeSort" on the command line.
 To learn how Spike Sorter works and how to use it, read "Spike_Sorter_Manual.pdf" file.
 
 # Developers
