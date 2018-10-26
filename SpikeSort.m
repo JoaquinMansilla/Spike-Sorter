@@ -4,7 +4,7 @@
 %point to the development of a full functionally Matlab tool for spike sorting. 
 %Developed by Joaquin Mansilla Yulan and Dr. Ing. Sergio Lew
 %Facultad de Ingeniería - Universidad de Buenos Aires
-%Githu
+%Github
 
 
 %% INITIALIZATION FUNCTIONS
