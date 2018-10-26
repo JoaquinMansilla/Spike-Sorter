@@ -1,9 +1,10 @@
 %% Matlab Spike Sorter 
-%This is a spike sorter developed in Facultad de Ingeniería - Universidad de Buenos Aires
-%This is a free Matlab tool which allows user to make offline manual and
-%semi-automatic sorting of spikes. This pretends to be a start point to the
-%development of a full functionally Matlab tool for spike sorting. 
-%Github 
+%This is an open-code free Matlab tool which allows user to make offline
+%manual and semi-automatic sorting of spikes. This pretends to be a start
+%point to the development of a full functionally Matlab tool for spike sorting. 
+%Developed by Joaquin Mansilla Yulan and Dr. Ing. Sergio Lew
+%Facultad de IngenierÃ­a - Universidad de Buenos Aires
+%Githu
 
 
 %% INITIALIZATION FUNCTIONS
@@ -520,7 +521,7 @@ function Logo_Button_Callback(hObject, eventdata, handles)
     cdata=get(hObject,'cdata');
     msgbox(['Matlab Spike Sorter was developed by:' sprintf('\n') ...
     'Joaquin Mansilla Yulan' sprintf('\n') 'Dr. Ing. Sergio Lew' ...
-    sprintf('\n') 'Instituto de Ingeniería Biomédica - Universidad' ...
+    sprintf('\n') 'Instituto de IngenierÃ­a BiomÃ©dica - Universidad' ...
     ' de Buenos Aires'],'Spike Sorter','custom',cdata);
 
 
