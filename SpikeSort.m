@@ -3,9 +3,8 @@
 %manual and semi-automatic sorting of spikes. This pretends to be a start
 %point to the development of a full functionally Matlab tool for spike sorting. 
 %Developed by Joaquin Mansilla Yulan and Dr. Ing. Sergio Lew
-%Facultad de IngenierÃ­a - Universidad de Buenos Aires
-%Github
-
+%Facultad de Ingeniería - Universidad de Buenos Aires
+%Github 
 
 %% INITIALIZATION FUNCTIONS
 
@@ -173,6 +172,7 @@ function File_Callback(hObject, eventdata, handles)
         fid=fopen([PathName FileName],'rb'); %opens a file in binary read mode.
         SL_str=num2str(SL);
         eval(['data=fread(fid,[Channels MaxDataLen],''int' SL_str ''');']); %Reads binary data from the opened file
+        fclose(fid);
         
         % Set Slider Step
         slider_step=min(1,1/fix((fileSize/(SL/8*MaxDataLen*Channels)-1))); %Set the slider step of the slide bar (raw data plot)
@@ -521,7 +521,7 @@ function Logo_Button_Callback(hObject, eventdata, handles)
     cdata=get(hObject,'cdata');
     msgbox(['Matlab Spike Sorter was developed by:' sprintf('\n') ...
     'Joaquin Mansilla Yulan' sprintf('\n') 'Dr. Ing. Sergio Lew' ...
-    sprintf('\n') 'Instituto de IngenierÃ­a BiomÃ©dica - Universidad' ...
+    sprintf('\n') 'Instituto de Ingeniería Biomédica - Universidad' ...
     ' de Buenos Aires'],'Spike Sorter','custom',cdata);
 
 
@@ -633,6 +633,7 @@ function [List]=search_fnc_from_file(file)
             List=strvcat(List,auxlist);
         end      
     end
+    fclose(f);
 
 
 
