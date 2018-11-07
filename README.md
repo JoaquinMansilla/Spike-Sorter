@@ -9,6 +9,6 @@ Download all files to the same folder. In Matlab, change actual folder to Spike 
 To learn how Spike Sorter works and how to use it, read "Spike_Sorter_Manual.pdf" file.
 
 # Developers
-This Matlab Spike Sorting tool was firstly developed by Joaquin Mansilla Yulan (student) and Dr. Ing. Sergio Lew at Facultad de Ingeniería at Universidad de Buenos Aires.
+This Matlab Spike Sorting tool was firstly developed by Joaquin Mansilla Yulan and Dr. Ing. Sergio Lew at Facultad de Ingeniería at Universidad de Buenos Aires.
 
 Contact mail: fiubaspikesorter@gmail.com
