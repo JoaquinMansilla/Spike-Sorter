@@ -619,8 +619,8 @@ function block_objects(handles)
 %Used to create a list of clustering alghoritms available
 function [List]=search_fnc_from_file(file)
     List=[];
-    f=fopen(file,'r');
-    f=fread(f,'char');
+    fid=fopen(file,'r');
+    f=fread(fid,'char');
     f=char(f');
     i=strfind(f,'HERE');
     Istart=strfind(f(i:end),'%##')+i+2;
@@ -633,7 +633,7 @@ function [List]=search_fnc_from_file(file)
             List=strvcat(List,auxlist);
         end      
     end
-    fclose(f);
+    fclose(fid);
 
 
 
